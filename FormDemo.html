@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Learning Forms....</h2>
+    <form id="form1" action="http://someserver/someprogram" method="post">
+        <label for="firstName">Enter First Name:</label>
+        <input type="text" name="firstName" placeholder="Enter First Name" required minlength="5"/>
+        <br/>
+        <label for="password">Enter Password:</label>
+        <input type="password" name="password" />    
+        <br/>
+        <label>Select Gender</label>
+        <input type="radio" name="gender" value="F"/>Female
+        <input type="radio" name="gender" value="M"/>Male
+        <br/>
+        <label for "Hobbies">Select Hobbies</label>
+        <input type="checkbox" name="Hobbies" value="Eat">Eat
+        <input type="checkbox" name="Hobbies" value="Sleep">Sleep
+        <input type="checkbox" name="Hobbies" value="Repeat">Repeat
+        <br/>
+        <label for="months">Choose Your Favorite Month...Dropdown</label>
+        <br/>
+            <select name="months">
+            <option value="Jan">January</option>
+            <option value="Feb">February</option>
+            <option value="March">March</option>
+            <option value="Apr">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="Aug">August</option>
+            <option value="Sept">September</option>
+            <option value="Oct">October</option>
+            <option value="Nov">November</option>
+            <option value="Dec">December</option>
+        </select>
+        <br/>
+        <label for="months">Choose Your Favorite Month...with multiple choice</label>
+        <br/>
+        <select name="months" multiple>
+                <option value="Jan">January</option>
+                <option value="Feb">February</option>
+                <option value="March">March</option>
+                <option value="Apr">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="Aug">August</option>
+                <option value="Sept">September</option>
+                <option value="Oct">October</option>
+                <option value="Nov">November</option>
+                <option value="Dec">December</option>
+        </select>
+        <br/>
+        <label for="comments">Please Enter your comments</label>
+        <br/>
+        <textarea name="comments" rows="5" cols="30"></textarea>
+        <br/>
+        <input type="submit" value="Submit"/>
+        <input type="reset" value="Reset"/>
+
+    </form>
+</body>
+</html>
